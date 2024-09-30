@@ -1,5 +1,3 @@
-version: "3" 
-
 services:
 
   heimdall:
@@ -12,6 +10,6 @@ services:
     volumes:
       - ./h_config:/config
     ports:
-      - 8500:80
-      - 6443:443
+      - "8500:80"
+      - "6443:443"
     restart: unless-stopped
